@@ -105,3 +105,16 @@
 
 
 # print(random_no)
+
+
+
+# lists 
+
+my_list = ['red', 'blue','grey', 120 , 1 , 9 ]
+
+get_color = my_list[len(my_list)-1]  
+#cause len count 0 + till end 
+print (get_color)
+
+
+
