@@ -106,15 +106,88 @@
 
 # print(random_no)
 
+# # lists
+# my_list = ['red', 'blue', 'grey', 'text ', 'another' ]
+# # get_color = my_list[len(my_list)-1]
+
+# # cause len count 0 + till end
+# # print(get_color)
+
+# # check if item in list
+# # we can make choic using if
+
+# # if 'red' in my_list:
+# #     print('its here : its ok ')
+# # else:
+# #     print('sry its not her')
+
+# # # using loop in list
+# my_list.append( ['new',50, True, 1 , 3 , 6])
+# index = 0
+
+# # for element in my_list:
+# #     print (element)
+
+# while index < len(my_list):# len of my list = 6
+#     print(my_list[index][index])
+#     index +=1 # index will be  0 +1  = 1
+
+# """ 0+ 1 , 1+1 , 2+1 , 3+1 , 4+1 , 5+1   """
+
+# # append item
+
+# lists
+# my_list = ['red', 'blue', 'grey', 'text ', 'another']
+# get_color = my_list[len(my_list)-1]
+
+# cause len count 0 + till end
+# print(get_color)
+
+# check if item in list
+# we can make choic using if
+
+# if 'red' in my_list:
+#     print('its here : its ok ')
+# else:
+#     print('sry its not her')
+
+# # using loop in list
+# extend vs append       extend in the same list and append to the end of my list in another list
+# my_list.extend(['new', 50, True, 1, 3, 6])
+# index = 0
+# print(my_list)
+# for element in my_list:
+#     print (element)
+
+# while index < len(my_list):  # len of my list = 6
+#     print(my_list[index])
+#     index += 1  # index will be  0 +1  = 1
+
+# """ 0+ 1 , 1+1 , 2+1 , 3+1 , 4+1 , 5+1   """
+
+# append item
+# my_list = ['red', 'blue', 'grey', 'text ', 'another']
+# my_list.extend(['new', 50, True, 1, 3, 6])
+# my_list.insert(1, [1, 333, 55, 99])
+
+# my_list.pop(0)
+# print(my_list)
 
 
-# lists 
+# my_list = ['red', 'blue', 'grey', 'text ', "1"]
 
-my_list = ['red', 'blue','grey', 120 , 1 , 9 ]
-
-get_color = my_list[len(my_list)-1]  
-#cause len count 0 + till end 
-print (get_color)
+# user_word = input('please give me ur value to remove :').lower()
 
 
+# if user_word in my_list:
+#     my_list.remove(user_word)
+#     print(my_list)
+    
+my_list = ['red', 'blue', 'grey', 'text ',1]
+ 
+# print('.'.join(my_list))
+string = 'hello'
 
+y = [x*5 for x in string]
+new_list = list(string)
+print(new_list)
