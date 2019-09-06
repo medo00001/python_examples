@@ -276,30 +276,74 @@
 # print(x)
 
 
-# make search engine
-import sys
-mylist_names = ['ali', 'mohamed']
-mydict = {'name': mylist_names, "phone": '010636996868'}
+# # make search engine
+# import sys
+# mylist_names = ['ali', 'mohamed']
+# mydict = {'name': mylist_names, "phone": '010636996868'}
 
-user_input = input('Enter search Name:')
-
-
-while user_input:
-
-    if user_input in mydict['name']:
-        # result = mydict['name'][user_input]
-        print('user exist')
-        user_input = input('Enter search Name:')
-
-    else:
-        print("No user have this Name")
-        print('Search Again (Y or N):')
-        user = (input('Search Again (Y or N):')).upper()
-        if user == 'Y':
-            user_input = input('Enter search Name:')
-        else:
-            sys.exit()
+# user_input = input('Enter search Name:')
 
 
+# while user_input:
 
-        
+#     if user_input in mydict['name']:
+#         # result = mydict['name'][user_input]
+#         print('user exist')
+#         user_input = input('Enter search Name:')
+
+#     else:
+#         print("No user have this Name")
+#         print('Search Again (Y or N):')
+#         user = (input('Search Again (Y or N):')).upper()
+#         if user == 'Y':
+#             user_input = input('Enter search Name:')
+#         else:
+#             sys.exit()
+
+# set
+
+# s= set('amir')
+
+# q = {'z','m','cv'}
+# print(type(q)) # set
+# print(s)
+# print('a'in s)
+
+# myset ={'amir','mohamed'}
+# myotherset = {'new', 'mohamed'}
+
+# newset = myotherset | myset
+# newset2 = myotherset & myset
+# print(newset2)
+# print(newset)
+
+# def myfunc():
+#     x = 10
+
+#     return x
+#     # print(x)  it wont run cause it after return
+
+
+# print(myfunc())
+
+# def addnum(user_name):
+#     return (f'welcome back {user_name} !')
+
+# print(addnum('mohamed'))
+
+
+# def check_even(numbers):
+#     total = 0
+#     for num in numbers:
+#         if num % 2 == 0:
+#             total += num
+#     return total
+
+
+# print(check_even([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))  # 2+ 4 + 6 +8  = 20
+
+
+def my_func_name ():
+    x = 10
+
+print(my_func_name.__name__ + ' my add')
