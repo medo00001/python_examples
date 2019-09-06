@@ -343,7 +343,23 @@
 # print(check_even([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))  # 2+ 4 + 6 +8  = 20
 
 
-def my_func_name ():
-    x = 10
+# def my_func_name ():
+#     x = 10
 
-print(my_func_name.__name__ + ' my add')
+# print(my_func_name.__name__ + ' my add')
+
+# # map
+
+# mylist = [1, 2, 3, 4, 5, 6]
+
+# my_map = map(lambda x: x * 2 , mylist)
+
+# new_list = list(my_map)
+# print(new_list)
+
+
+# filter for any iterable
+# mylist = [1, 2, 3, 4, 5, 6]
+# my_filter = filter(lambda x: x % 2 == 0, mylist)
+
+# print(list(my_filter))
