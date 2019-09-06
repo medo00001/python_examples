@@ -182,12 +182,57 @@
 # if user_word in my_list:
 #     my_list.remove(user_word)
 #     print(my_list)
-    
-my_list = ['red', 'blue', 'grey', 'text ',1]
- 
-# print('.'.join(my_list))
-string = 'hello'
 
-y = [x*5 for x in string]
-new_list = list(string)
-print(new_list)
+# my_list = ['red', 'blue', 'grey', 'text ', 1]
+
+# # print('.'.join(my_list))
+# string = 'hello'
+
+# y = [x*5 for x in string]
+# new_list = list(string)
+# print(new_list)
+
+
+# import asyncio
+
+# async def main():
+#     print('Hello ...')
+#     await asyncio.sleep(1)
+#     print('... World!')
+
+# # Python 3.7+
+# asyncio.run(main())
+
+# #TODO: add more func
+
+# nested list
+
+# new_list = ['ali', 'amir', 'medo']
+# new_list2 = ['*', '*', '*']
+# new_list3 = ['4', '5', '6']
+
+# mylist = [[new_list, new_list2, new_list3], [
+#     new_list, new_list2, new_list3], [new_list, new_list2, new_list3]]
+
+# [[[[print(newval)for newval in val]for val in item] for item in mylist]]
+
+# value = ['mohamed',28,True] 
+# key =['name','age','status']
+# newdict = dict(key=value)
+# print(newdict)
+
+
+# mydict = {'name':"mohamed",'age':25,'status':True}
+
+# for key ,value in mydict.items():
+#     print(f"key is :{key}, value is {value}")
+
+
+# # items = mydict.items()
+
+# print(items)
+
+
+
+
+
