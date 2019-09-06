@@ -233,6 +233,27 @@
 # print(items)
 
 
+# value = 'User Dosent Exists'
+# key =['name','age','status']
+
+# dict = {}
+
+# c= dict.fromkeys(key,value)
+
+# print(c)
 
 
+# # update
 
+# mydict = dict (name='mohamed',age=28)
+
+# # second ={'name':'greet'}
+# second = second.update(mydict)
+
+# print(second)
+# print(mydict)
+
+
+a_dict = dict(k=4, z=2)
+a_dict.update(dict(l=1))
+print (a_dict)
