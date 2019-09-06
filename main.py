@@ -277,16 +277,29 @@
 
 
 # make search engine
+import sys
 mylist_names = ['ali', 'mohamed']
+mydict = {'name': mylist_names, "phone": '010636996868'}
+
 user_input = input('Enter search Name:')
+
 
 while user_input:
 
-    if user_input in mylist_names:
+    if user_input in mydict['name']:
         # result = mydict['name'][user_input]
         print('user exist')
         user_input = input('Enter search Name:')
 
     else:
-        print("no exist")
-        user_input = input('Enter search Name:')
+        print("No user have this Name")
+        print('Search Again (Y or N):')
+        user = (input('Search Again (Y or N):')).upper()
+        if user == 'Y':
+            user_input = input('Enter search Name:')
+        else:
+            sys.exit()
+
+
+
+        
