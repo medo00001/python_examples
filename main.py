@@ -216,7 +216,7 @@
 
 # [[[[print(newval)for newval in val]for val in item] for item in mylist]]
 
-# value = ['mohamed',28,True] 
+# value = ['mohamed',28,True]
 # key =['name','age','status']
 # newdict = dict(key=value)
 # print(newdict)
@@ -257,3 +257,36 @@
 # a_dict = dict(k=4, z=2)
 # a_dict.update(dict(l=1))
 # print (a_dict)
+
+
+# #  make dict
+# key = ['A','c']
+# value  = [1,2,3]
+
+# x= {key[i]:value[i] for i in range(0,len(key))}
+# print(x)
+
+
+# #  make dict
+
+# key  = [1,2]
+# value = ['amir','ali']
+
+# x= {key[i]:value[i].upper() for i in range(0,len(key))}
+# print(x)
+
+
+# make search engine
+mylist_names = ['ali', 'mohamed']
+user_input = input('Enter search Name:')
+
+while user_input:
+
+    if user_input in mylist_names:
+        # result = mydict['name'][user_input]
+        print('user exist')
+        user_input = input('Enter search Name:')
+
+    else:
+        print("no exist")
+        user_input = input('Enter search Name:')
