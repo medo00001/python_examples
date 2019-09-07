@@ -399,7 +399,7 @@
 # print(divide_num(1, 00))
 
 
-#  request from website 
+#  request from website
 # import requests
 
 
@@ -437,3 +437,27 @@
 
 # # print(data )
 # # {'id': 'YvkV8xXnjyd', 'joke': 'Why did the cowboy have a weiner dog? Somebody told him to get a long little doggy.'}
+
+#  classes
+
+# print(help(list))
+
+# # programme to cout words u want to count  
+
+# user_input = input('Enter letter u want to count : ')
+# user_letter = input('What letter u want to count : ')
+# def func(user_input):
+#     return len(user_input)
+
+
+# def count_letter(user_input):
+#     repeat = 0
+#     for letter in user_input:
+#         if letter == user_letter:
+#             repeat += 1
+#     return repeat
+   
+
+# print(func(user_input))
+# print( count_letter(user_input))
+
