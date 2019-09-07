@@ -378,20 +378,23 @@
 # def pick_color(color):
 #     if color not in mylist:
 #         raise ValueError ('pleas add vali color ')
-#     print(f'u are right u chose \"   {color}   \" color') 
+#     print(f'u are right u chose \"   {color}   \" color')
 
 
 # pick_color('red')
 
-# except Error 
+# except Error
 
-def divide_num(a ,b):
-    
+def divide_num(a, b):
+
     try:
-        result = a/b 
-        return result 
-    except ZeroDivisionError as  err :
-            print('there is some thing wrong ')
+        result = a/b
+        return result
+    except ZeroDivisionError as err:
+
+        print('there is some thing wrong ')
+
         print(err)
 
-print(divide_num(1,00))
+
+print(divide_num(1, 00))
