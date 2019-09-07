@@ -385,16 +385,55 @@
 
 # except Error
 
-def divide_num(a, b):
+# def divide_num(a, b):
 
-    try:
-        result = a/b
-        return result
-    except ZeroDivisionError as err:
+#     try:
+#         result = a/b
+#         return result
+#     except ZeroDivisionError as err:
 
-        print('there is some thing wrong ')
+#         print('there is some thing wrong ')
 
-        print(err)
+#         print(err)
+
+# print(divide_num(1, 00))
 
 
-print(divide_num(1, 00))
+#  request from website 
+# import requests
+
+
+# user_serach = input('what do u want to search :')
+# number = int(input('whats ur no for jokes u want :'))
+
+# url = 'https://icanhazdadjoke.com/search'
+# res = requests.get(
+#     url, headers={'accept': 'application/json'},
+#     params={'term': user_serach,
+#             'limit': number})
+
+
+# # print (res.ok)
+# # print (res.headers)
+
+
+# data = res.json()
+# joke = data['results']
+# no_of_result = data['total_jokes']
+# print(f' i found {no_of_result} joke for { user_serach}')
+# if no_of_result == 0:
+#     print(f" ther is no joke for {user_serach}")
+# else:
+#     print(f' her is  {number} u want for now ')
+
+# print("--------------------------------------")
+
+# count = 0
+# for jo in joke:
+#     print(joke[count]['joke'])
+#     print("--------------------------------------")
+#     count += 1
+
+
+# # print(data )
+# # {'id': 'YvkV8xXnjyd', 'joke': 'Why did the cowboy have a weiner dog? Somebody told him to get a long little doggy.'}
