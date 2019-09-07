@@ -442,7 +442,7 @@
 
 # print(help(list))
 
-# # programme to cout words u want to count  
+# # programme to cout words u want to count
 
 # user_input = input('Enter letter u want to count : ')
 # user_letter = input('What letter u want to count : ')
@@ -456,8 +456,61 @@
 #         if letter == user_letter:
 #             repeat += 1
 #     return repeat
-   
+
 
 # print(func(user_input))
 # print( count_letter(user_input))
 
+
+# class Person():
+#     def __init__(self, anyname):
+#         self.name = anyname
+
+
+# mohamed = Person(50)   # we now made new obj ogf person
+# print(mohamed.name)
+# print ()
+
+
+# class Person():
+#     def __init__(self, anyname):
+#         self.__name = anyname
+
+
+# mohamed = Person(20)   # we now made new obj ogf person
+# print(mohamed._Person__name)
+# print ()
+
+# class Person():
+#     def __init__(self, name):
+#         self.name = name
+
+#     def func(self, thing, name):
+#         # her self.name is from class not from func parameter that given
+#         print(thing, self.name)
+#         return name  # this param from func
+
+
+# mohamed = Person(20)   # we now made new obj of person
+
+# print(mohamed.func('hello mohamed', 'am another name'))
+
+class Person():
+    active_users = 0
+
+    def __init__(self, age):
+        self.age = age
+        # trace stat of attribute we add class attribute here
+        Person.active_users += 1  # we add 1 to active_user when we make new obj from class
+
+    def func(self, thing, name):
+        # her self.name is from class not from func parameter that given
+        print(thing, f'my age is {self.age}')
+        # import pdb; pdb.set_trace()
+        return (f'active user is now : {Person.active_users}')
+
+
+mohamed = Person(28)   # we now made new obj of person
+ali = Person(31)   # we now made new obj of person
+# Person.active_users is now 2 after we make 2 obj of class Person 
+print(mohamed.func('hello mohamed', 'am another name'))
