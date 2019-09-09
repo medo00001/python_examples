@@ -495,22 +495,111 @@
 
 # print(mohamed.func('hello mohamed', 'am another name'))
 
-class Person():
-    active_users = 0
+# class Person():
+#     """its comment about explain this class
 
-    def __init__(self, age):
-        self.age = age
-        # trace stat of attribute we add class attribute here
-        Person.active_users += 1  # we add 1 to active_user when we make new obj from class
+#     Returns:
+#         [type] -- [description]
+#     """
+#     active_users = 0
 
-    def func(self, thing, name):
-        # her self.name is from class not from func parameter that given
-        print(thing, f'my age is {self.age}')
-        # import pdb; pdb.set_trace()
-        return (f'active user is now : {Person.active_users}')
+#     def __init__(self, age):
+#         self.age = age
+#         # trace stat of attribute we add class attribute here
+#         Person.active_users += 1  # we add 1 to active_user when we make new obj from class
+
+#     def func(self, thing, name):
+#         # her self.name is from class not from func parameter that given
+#         print(thing, f'my age is {self.age}')
+#         # import pdb; pdb.set_trace()
+#         return (f'active user is now : {Person.active_users}')
 
 
-mohamed = Person(28)   # we now made new obj of person
-ali = Person(31)   # we now made new obj of person
-# Person.active_users is now 2 after we make 2 obj of class Person 
-print(mohamed.func('hello mohamed', 'am another name'))
+# mohamed = Person(28)   # we now made new obj of person
+# ali = Person(31)   # we now made new obj of person
+# # Person.active_users is now 2 after we make 2 obj of class Person
+# print(mohamed.func('hello mohamed', 'am another name'))
+
+#  both var have same id cause they have same vale
+# x = 10
+# y = 9+1
+# print(id(x))
+# print(id(y))
+
+# #  not the same id in the same list
+# x = [0]
+# y = [0]
+# print(id(x))
+# print(id(y))
+
+
+# class method concerned with this class
+# class Person():
+#     @classmethod
+#     def Set_obj(cls, data):
+#         # we change the data passes and we can make change on it before we make new instance
+#         name, last_name, age = data[0] = 'hello', data[1], data[2]
+#         return cls(name, last_name, age)
+
+#     def __init__(self, name, last_name, age):
+#         self.name = name
+#         self.last_name = last_name
+#         self.age = age
+
+#     def first_name():
+#         return self.last_name
+
+
+# # newuser = Person('mohamed', 'amir', 28)
+
+# # print(newuser.name)
+# # print(newuser.last_name)
+# # print(newuser.age)
+
+# user1 = Person.Set_obj(['mohamed', 'amir', 28])
+# print(user1.name)
+# print(user1.last_name)
+# print(user1.age)
+
+# class Name:
+#     def __init__(self, name):
+#         self.name = name
+
+
+# class Person(Name):
+#     def __init__(self, name):
+#         self.name = name
+
+
+# print(issubclass(Person, Name))
+
+
+name = 'mohamed'
+nextchar = iter(name)
+
+# for char in nextchar:
+#     """
+#     it will iterate untill Raise  StopIteration erro
+#     """
+#     print(next(nextchar))
+
+
+# print(next(nextchar))
+# print(next(nextchar))
+# print(next(nextchar))
+# print(next(nextchar))
+# print(next(nextchar))
+# print(next(nextchar))
+# print(next(nextchar))
+
+def iteron():
+    """[it return ' m' on first call ]
+
+    Returns:
+        [string] -- [first letter]
+    """
+    return next(nextchar)
+
+
+for char in range(0, len(name)):
+    print(iteron())
