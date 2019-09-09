@@ -574,8 +574,9 @@
 # print(issubclass(Person, Name))
 
 
-name = 'mohamed'
-nextchar = iter(name)
+#  iterator and iterable
+# name = 'mohamed'
+# nextchar = iter(name)
 
 # for char in nextchar:
 #     """
@@ -592,6 +593,24 @@ nextchar = iter(name)
 # print(next(nextchar))
 # print(next(nextchar))
 
+# def iteron():
+#     """[it return ' m' on first call ]
+
+#     Returns:
+#         [string] -- [first letter]
+#     """
+#     return next(nextchar)
+
+
+# for char in range(0, len(name)):
+#     print(iteron())
+# #  use while with iterator instead of for loop
+
+
+name = input("please Enter any thing : ")
+nextchar = iter(name)
+
+
 def iteron():
     """[it return ' m' on first call ]
 
@@ -601,5 +620,12 @@ def iteron():
     return next(nextchar)
 
 
-for char in range(0, len(name)):
+char = 0
+while True:
     print(iteron())
+    char += 1
+    if char == len(name):
+        print('End of text ')
+        break
+
+#  use while with iterator instead of for loop
