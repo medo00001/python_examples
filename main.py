@@ -607,25 +607,48 @@
 # #  use while with iterator instead of for loop
 
 
-name = input("please Enter any thing : ")
-nextchar = iter(name)
+# name = input("please Enter any thing : ")
+# nextchar = iter(name)
 
 
-def iteron():
-    """[it return ' m' on first call ]
+# def iteron():
+#     """[it return ' m' on first call ]
 
-    Returns:
-        [string] -- [first letter]
-    """
-    return next(nextchar)
+#     Returns:
+#         [string] -- [first letter]
+#     """
+#     return next(nextchar)
 
 
-char = 0
-while True:
-    print(iteron())
-    char += 1
-    if char == len(name):
-        print('End of text ')
-        break
+# char = 0
+# while True:
+#     print(iteron())
+#     char += 1
+#     if char == len(name):
+#         print('End of text ')
+#         break
 
-#  use while with iterator instead of for loop
+# #  use while with iterator instead of for loop
+
+def func1(func_as_var):
+    def func2():
+        func_as_var()
+        print('its func 2')
+    return func2
+
+
+@func1
+def func3():  # instead of write my_var = func1(func3)   i write  @func1
+    print("its func 3")
+
+
+@func1  # its decorator sugre
+def func4():  # instead of write my_var = func1(func3)   i write  @func1
+    print("its func 4")
+
+
+func3()
+print("------------------------------------")
+func4()
+# my_var = func1(func3)
+# my_var()
